@@ -1,0 +1,11 @@
+<div class="row">
+  <mat-card *ngIf="article" class="col-10 col-sm-6 offset-1 offset-sm-3 item">
+    <mat-card-header>
+      <mat-card-title><a [href]="article.url">{{article.title}}</a></mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="article.imageUrl" />
+    <mat-card-content>
+      <p>{{article.summary}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
